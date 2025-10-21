@@ -1,0 +1,207 @@
+/* فونت های سفارشی */
+
+@font-face {
+    font-family: "vazir";
+    src: url(../Vazirmatn-Regular.woff2) format("woff2");
+}
+body{
+    font-family: "vazir";
+    display: flex;
+    flex-direction: column;
+}
+
+/* شروع کدهای سفارشی */
+/* برای هدر */
+.main{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    position: sticky;
+    top: 50px;
+    z-index: 999;
+
+}
+.head{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    background-image: linear-gradient(45deg, rgb(252, 109, 109) 20%, rgb(102, 102, 222));
+    padding: 0;
+    border-radius: 11.5px;
+    align-items: center;
+    width: 70%;
+    height: 60px;
+}
+/* کده لوگوم */
+.img{
+    border-radius: 100%;
+    animation: erfanrotate  30s linear infinite;
+    width: 90px;
+    height: 90px;
+}
+.header-logo{
+  margin: 0;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+ul{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    list-style: none;
+}
+/* کد های فهرست */
+.pp{
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+.pp:hover{
+    color: rgb(69, 254, 254);
+    transition: .2s linear;
+}
+/* کد های مربوط به سرچ باکس هدرم */
+.ssearch{
+    display: flex;
+    text-align: end;
+    font-family: "vazir";
+    border-radius: 8px;
+    border: 1px solid rgb(12, 12, 12);
+    padding: 8px;
+    width: 220px;
+    color: black;
+}
+.ssearch:focus{
+ border: 1px solid gray;
+ outline: none;
+}
+input::placeholder{
+color: black;
+}
+input:focus::placeholder{
+    color: rgb(224, 224, 224);
+    transition: 0.3s ease;
+}
+
+/* تعریف انیمیشن برای لوکوی سایت */
+
+@keyframes erfanrotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+      }  }
+
+
+      .price{
+        text-align: center;
+        width: 100%;
+        border: 1px dashed black;
+        height: 99%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+          }
+      .prc-dv{
+        align-self: center;
+        width: 220px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        margin-top: 60px;
+        position: relative;
+        overflow: hidden;
+      }
+      .price:before,.price:after{
+        content: "";
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        z-index: 99;
+        background-color: white;
+      }
+      .price:before{
+        left: -19px;
+        top: calc(50% - 22%);
+        border: 1px dashed black;
+        border-radius: 50%;
+        z-index: 99;
+      }
+      .price:after{
+        right: -19px;
+        top: calc(50% - 22%);
+        border: 1px dashed black;
+        border-radius: 50%;
+        z-index: 99;
+      }
+      .p2{
+        justify-content: center;
+        align-self: center;
+      }
+      .p2:before{
+        content: "د";
+        color: red;
+      }
+      .p2:after{
+        content: "ن";
+        color: blue;
+      }
+      ::selection{
+        background-color: bisque;
+        color: blue;
+      }
+      .drop{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: white;
+        top: 50px;
+        text-align: right;
+        padding: 9px;
+        border-radius: 9px;
+        box-shadow: 1px 1px 10px 1px black;
+        width: max-content;
+        opacity: 0;
+        transition: 0.5s ease;
+        pointer-events: none;
+        right: 30%;
+        text-align: right;
+        gap: 20px;
+        }
+      .drop-down{
+        color: black;
+        text-align: right;
+      }
+      .dr:hover .drop-down{
+        color: gray;
+      }
+      li:hover .drop{
+        opacity: 1;
+        pointer-events: auto;
+      }
+      nav{
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+      nav > .main-ul{
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+      ul > li.for{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        text-align: right;
+        flex-direction: row-reverse;
+      }
+      svg{
+        transform: rotate(180deg);
+        transition: .3s linear;
+      }
+      .for:hover svg{
+        transform: none;
+      }

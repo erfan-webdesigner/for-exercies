@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="./style.css">
+    <div class="main">
+    <div class="head">
+        <a href="./erfan.html" class="header-logo">
+            <img class="img" src="./photo_2025-08-31_18-55-05.jpg">
+        </a>
+        <nav>
+            <ul>
+                
+                <li><a class="pp" href="./erfan.html">صفحه ی اصلی</a></li>
+                <li><a class="pp" href="./aboutus.html">درباره ی ما</a></li>
+                <li><a class="pp" href="./form.html" target="_blank">عضویت در تیم ما</a></li>
+                <li><a class="pp" href="./tamrin.html">رفتن به تمرین سی اس اس</a></li>
+            </ul>
+        </nav>
+        <form action="#" class="search">
+            <input class="ssearch" type="search" placeholder=". . . . جست و جوی محصولات">
+        </form>
+    </div>
+    </div>
+    </head>
+    <body>
+    <div>
+        <p> برای عضویت در تیم ما لطفا فرم زیر را وارد کنید</p>
+        <form action="./erfan.html" method="post">
+            <br>
+            <br>
+             <label for="email">ایمیل خود را وارد کنید</label>
+            <br>   
+            <input type="email" name="email" placeholder="ایمیل را وارد کنید" id="email" required>
+            <br>
+            <br>
+            <br>
+            <label for="username">نام کابری خود را وارد کنید</label>    
+            <br>        
+            <input type="text" name="username" placeholder="نام کابریر خود را وارد کنید" id="username" minlength="3" maxlength="20" required>
+            <br>
+            <br>
+            <br>
+            <label for="phonenumber">تلفن خود را وارد کنید</label>    
+            <br>             
+            <input type="tel" name="phonenumber" placeholder="لطفا شماره تماس خود را وارد کنید" id="phonenumber" required>
+            <br>
+            <br>
+            <br>
+            <label for="age">سن خود را وارد کنید</label>    
+            <br>             
+            <input type="number" name="age" placeholder="مثال: 26" id="age" min="14" max="50" required>
+                    <br>
+        <br>
+        <br>
+        <fieldset>
+            <legend>درباره ی خودتان برای ما بگویید</legend>
+            <br>
+            <label>جنسیت خود را وارد کنید</label>
+            <br>
+            <input type="radio" name="جنسیت" value="male">مرد
+            <br>
+            <input type="radio" name="جنسیت" value="female">زن
+            <br>
+            <br>
+            <label>شهر خود را انتخاب کنید</label>
+            <br>
+            <select name="city">
+                <option value="esfahan">اصفهان</option>
+                <option value="tehran">تهران</option>
+                <option value="tabriz">تبریز</option>
+                <option value="zanjan">زنجان</option>
+                <option value="eslam shahr">اسلام شهر</option>
+                <option value="ghazvin">قزوینیه کمر پر</option>
+            </select>
+        </fieldset>
+        <button type="submit">گردن گیری گوهی که خوردی</button>
+        </form>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
