@@ -1,20 +1,20 @@
-//آرایه ها
+// آرایه ها
 // let x = ["erfan", "sarae", "hastam", 16, "esfahan", true];
 // console.log(x[5]);
 
-//فانکشن حالت اول
+// فانکشن حالت اول
 // function hello(){
 //     console.log("hellow world");
 // }
 // // call function
 // hello();
-//فانکشن حالت دوم
+// فانکشن حالت دوم
 // const logging = function() {
 //     console.log("hello wrold");
 // }
 // logging();
 
-//تمرین غرض و ارتفاع زمین
+// تمرین غرض و ارتفاع زمین
 // function erea(width, height) {
 //     const eq = height * width;
 //     console.log(eq);
